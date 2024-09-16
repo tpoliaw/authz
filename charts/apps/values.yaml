@@ -21,3 +21,10 @@ opa:
       bundlerSecret:
         name: token-authorization
         key: bearer
+    ingress:
+      enabled: true
+      hosts:
+        - host: authz.diamond.ac.uk
+          paths:
+            - path: /
+              pathType: Prefix
