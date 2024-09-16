@@ -10,3 +10,14 @@ bundler:
   repoUrl: https://github.com/DiamondLightSource/authz.git
   targetRevision: HEAD
   path: charts/bundler
+
+opa:
+  enabled: true
+  repoUrl: https://github.com/DiamondLightSource/authz.git
+  targetRevision: HEAD
+  path: charts/opa
+  valuesObject:
+    orgData:
+      bundlerSecret:
+        name: token-authorization
+        key: bearer
